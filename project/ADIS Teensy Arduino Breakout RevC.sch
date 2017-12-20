@@ -155,7 +155,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S" xrefpart="/%S">
+<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -7743,8 +7743,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </classes>
 <parts>
 <part name="J2" library="Testing" deviceset="ARDUINO_R3_SHIELD" device="UNO_R3_SHIELD_HOLES"/>
-<part name="J4" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
-<part name="J3" library="Testing" deviceset="TEENSY-3.1" device="SILK"/>
+<part name="J4" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH">
+<attribute name="PARTNO" value="M20-9720345"/>
+</part>
+<part name="J3" library="Testing" deviceset="TEENSY-3.1" device="SILK">
+<attribute name="PARTNO" value="TEENSY32"/>
+</part>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7795,21 +7799,33 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="C12" library="SparkFun-Passives" deviceset="CAP" device="1206" value="10uF">
 <attribute name="PARTNO" value="TLJA476M010R0600"/>
 </part>
-<part name="J1" library="Analog Devices iSensors" deviceset="A3-16PA-2SV(71)" device="T"/>
+<part name="J1" library="Analog Devices iSensors" deviceset="A3-16PA-2SV(71)" device="T">
+<attribute name="PARTNO" value="A3-16PA-2SV(71)"/>
+</part>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J7" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="J7" library="SparkFun-Connectors" deviceset="M03" device="PTH">
+<attribute name="PARTNO" value="68000-103HLF"/>
+</part>
 <part name="D2" library="Chong" deviceset="DIODE-" device="DO214AA" value="SSB43L-E3">
 <attribute name="PARTNO" value="SSB43L-E3/52T"/>
 </part>
-<part name="L1" library="AnalogDevices" deviceset="CLF6045T-6R8N-H" device=""/>
+<part name="L1" library="AnalogDevices" deviceset="CLF6045T-6R8N-H" device="">
+<attribute name="PARTNO" value="CLF6045T-6R8N-H"/>
+</part>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="FRAME1" library="frames_Juan" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME2" library="frames_Juan" deviceset="FRAME_A_L" device=""/>
-<part name="J9" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM" value="3V3 EXT"/>
-<part name="U2" library="Chong" deviceset="SIP32510" device=""/>
+<part name="J9" library="SparkFun-Connectors" deviceset="CONN_02" device="3.5MM" value="3V3 EXT">
+<attribute name="PARTNO" value="20020327-C021B01LF"/>
+</part>
+<part name="U2" library="Chong" deviceset="SIP32510" device="">
+<attribute name="PARTNO" value="SIP32510DT-T1-GE3"/>
+</part>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J10" library="SparkFun-Connectors" deviceset="CONN_03" device=""/>
+<part name="J10" library="SparkFun-Connectors" deviceset="CONN_03" device="">
+<attribute name="PARTNO" value="68000-103HLF"/>
+</part>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
@@ -7831,8 +7847,11 @@ Leonardo-compatible shields.</text>
 </instance>
 <instance part="J4" gate="G$1" x="66.04" y="38.1" smashed="yes">
 <attribute name="NAME" x="61.722" y="43.942" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="66.04" y="38.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J3" gate="G$1" x="210.82" y="129.54"/>
+<instance part="J3" gate="G$1" x="210.82" y="129.54">
+<attribute name="PARTNO" x="210.82" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND1" gate="1" x="78.74" y="78.74"/>
 <instance part="GND2" gate="1" x="182.88" y="93.98"/>
 <instance part="GND3" gate="1" x="81.28" y="25.4"/>
@@ -7854,15 +7873,23 @@ Leonardo-compatible shields.</text>
 <instance part="J6" gate="G$1" x="137.16" y="22.86" smashed="yes">
 <attribute name="NAME" x="134.62" y="28.702" size="1.778" layer="95"/>
 </instance>
-<instance part="J1" gate="J$1" x="43.18" y="177.8"/>
+<instance part="J1" gate="J$1" x="43.18" y="177.8">
+<attribute name="PARTNO" x="43.18" y="177.8" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="55.88" y="154.94"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
-<instance part="J9" gate="G$1" x="139.7" y="160.02" rot="R180"/>
-<instance part="U2" gate="U$1" x="96.52" y="172.72"/>
+<instance part="J9" gate="G$1" x="139.7" y="160.02" rot="R180">
+<attribute name="PARTNO" x="139.7" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U2" gate="U$1" x="96.52" y="172.72">
+<attribute name="PARTNO" x="96.52" y="172.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND5" gate="1" x="109.22" y="165.1"/>
 <instance part="GND6" gate="1" x="129.54" y="152.4"/>
-<instance part="J10" gate="J$1" x="139.7" y="175.26" rot="R180"/>
+<instance part="J10" gate="J$1" x="139.7" y="175.26" rot="R180">
+<attribute name="PARTNO" x="139.7" y="175.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY4" gate="G$1" x="129.54" y="180.34"/>
 </instances>
 <busses>
@@ -8524,7 +8551,9 @@ external power supply. </text>
 <instance part="C12" gate="G$1" x="119.38" y="106.68">
 <attribute name="PARTNO" x="119.38" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J7" gate="G$1" x="88.9" y="129.54"/>
+<instance part="J7" gate="G$1" x="88.9" y="129.54">
+<attribute name="PARTNO" x="88.9" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="D2" gate="G$1" x="106.68" y="132.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="101.092" y="136.3726" size="1.778" layer="95"/>
 <attribute name="VALUE" x="101.092" y="134.0866" size="1.778" layer="96"/>
@@ -8533,6 +8562,7 @@ external power supply. </text>
 <instance part="L1" gate="L$1" x="180.34" y="111.76" smashed="yes" rot="R270">
 <attribute name="NAME" x="177.8" y="115.57" size="1.778" layer="95"/>
 <attribute name="VALUE" x="177.8" y="113.03" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="180.34" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="119.38" y="134.62"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
