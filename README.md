@@ -12,3 +12,6 @@ The board includes the following features:
 
 Note that the switching regulator is optional and does not have to be installed for the breakout board to properly function.
 
+Click here to order a set of boards from OshPark: https://oshpark.com/shared_projects/kZZn1wic
+
+![ADIS16470-Teensy Interface Board](https://raw.githubusercontent.com/juchong/ADIS16470_Arduino_Teensy/master/ADIS16470/images/470_Breakout_Example.jpg)
