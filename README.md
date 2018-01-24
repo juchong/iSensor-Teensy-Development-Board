@@ -1,7 +1,7 @@
 # iSensor Teensy Development Board
 ### An open source development board for Analog Devices iSensor products
 
-This development board was designed to provide users with an easy way to develop and test firmware using iSensor MEMS IMUs. The board conforms to the standard Arduino pinout making it compatible with the entire ecosystem of break-out boards. A Teensy 3.1, 3.2, and LC may be used with this board, minimizing cost. The board includes a standard 2mm pitch 16 pin connector similar to the BlackFin evaluation board, making all iSensor breakout boards compatible. 
+This development board was designed to provide users with an easy way to develop and test firmware using iSensor MEMS IMUs. The board conforms to the standard Arduino pinout making it compatible with the entire ecosystem of break-out boards. A Teensy 3.1, 3.2, or LC may be used with this board, minimizing cost. The board includes a standard 2mm pitch 16 pin connector similar to the BlackFin evaluation board, making all iSensor breakout boards compatible. 
 
 The board includes the following features:
 - 4V ~ 20V input, 3.3V output switching regulator with selectable input (USB vs External)
