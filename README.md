@@ -8,10 +8,10 @@ The board includes the following features:
 - Programmable high-side switch for controlled switching tests
 - 3.3V external supply input
 - I2C/Analog Input selectable solder pads
-- Arduino pinout and mechanical form factor
+- Compatible with Arduino pinout and mechanical form factor
 
 Note that the switching regulator is optional and does not have to be installed for the breakout board to properly function.
 
-Click here to order a set of boards from OshPark: https://oshpark.com/shared_projects/kZZn1wic
+Click here to order a set of boards from OshPark: [https://oshpark.com/shared_projects/IdmggZVF](https://oshpark.com/shared_projects/IdmggZVF)
 
 ![ADIS16470-Teensy Interface Board](https://raw.githubusercontent.com/juchong/ADIS16470_Arduino_Teensy/master/ADIS16470/images/470_Breakout_Example.jpg)
